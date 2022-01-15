@@ -1,0 +1,74 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+         "jest": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "prefer-arrow-functions"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "bracketSpacing": true,
+          "trailingComma": "all",
+          "singleQuote": true,
+          "semi": true,
+          "useTabs": false,
+          "tabWidth": 2,
+          "printWidth": 80,
+          "endOfLine": "auto"
+        }
+      ],
+      "react/jsx-filename-extension": [
+        "warn",
+        {
+          "extensions": [
+            ".jsx",
+            ".tsx",
+            ".js"
+          ]
+        }
+      ],
+      "react/prop-types": "off",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "eqeqeq": "error",
+      "curly": "error",
+      "no-trailing-spaces": "error",
+      "eol-last": ["error", "always"],
+      "prefer-template": "error",
+      "import/prefer-default-export": "off",
+      "prefer-arrow-functions/prefer-arrow-functions": [
+        "warn",
+        {
+          "classPropertiesAllowed": false,
+          "disallowPrototype": false,
+          "returnStyle": "unchanged",
+          "singleReturnOnly": false
+        }
+      ],
+      "react/function-component-definition": [
+        2,
+        {
+          "namedComponents": "arrow-function",
+          "unnamedComponents": "arrow-function"
+        }
+      ]
+    }
+}
